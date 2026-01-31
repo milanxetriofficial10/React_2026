@@ -1,10 +1,11 @@
 import React from 'react';
-import PropsArrays from './Home/PropsArrays.jsx';
+import ConditionalComponent from './components/ConditinalComponent';
+
 
 function App(){
   return(
     <div className='App'>
-      <PropsArrays />
+      <ConditionalComponent />
     </div>
   )
 }
