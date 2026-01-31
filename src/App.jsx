@@ -1,11 +1,13 @@
 import React from 'react';
-import ConditionalComponent from './components/ConditinalComponent';
+import Navbar from './project_Fillup/includes/Navbar';
+
 
 
 function App(){
   return(
     <div className='App'>
-      <ConditionalComponent />
+      <Navbar />
+
     </div>
   )
 }
