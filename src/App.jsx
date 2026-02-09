@@ -1,24 +1,15 @@
-import React from 'react';
-import { useState } from 'react';
-import UserContext from './components/Coding_Learning/UserContext';
-import MainContext from './components/Programmer/MainContext';
+import React from "react";
+import { Routes, Route } from "react-router-dom";  // no BrowserRouter here
+import InstagramProfile from "./Real_LIfe_Project/Prifiles/InstagramProfile";
+import EditProfile from "./Real_LIfe_Project/Prifiles/EditProfile";
 
-
-
-
-
-function App(){
-
-  const [user, setUser] = useState("Milan Programmer");
-
-  return(
-    <div>
-      <UserContext.Provider value={user}>
-        <MainContext />
-      </UserContext.Provider>
-    
-    </div>
-    
-  )
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<InstagramProfile />} />
+      <Route path="/edit-profile" element={<EditProfile />} />
+    </Routes>
+  );
 }
+
 export default App;
